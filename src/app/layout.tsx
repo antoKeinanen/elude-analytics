@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans min-h-screen border-red-500 ${mulish.variable}`}>
+      <body
+        className={`min-h-screen font-sans ${mulish.variable}`}
+      >
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
